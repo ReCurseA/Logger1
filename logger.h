@@ -15,12 +15,6 @@ public:
     Logger();
     ~Logger();
 
-    /*template<typename T1>
-    void LogToBinaryFile(const std::string &FileName, T1 &values);
-
-    template<typename T2>
-    void LogToTextFile(const std::string &FileName, T2 &values);*/
-
     void LogToBinaryFile(const std::string &FileName, std::vector<double> &values, std::clock_t startTime);
     void LogToBinaryFile(const std::string &FileName, double value, std::clock_t startTime);
 
